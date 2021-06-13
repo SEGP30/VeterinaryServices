@@ -1,0 +1,56 @@
+﻿@startuml
+'https://plantuml.com/sequence-diagram
+
+interface IVeterinaryService {
+    void Input()
+    void Output()
+}
+interface IEntity{
+    virtual long Id
+    
+}
+class BaseEntity{
+    DateTime CreationDate
+    DateTime UpdatedDate
+}
+abstract class VeterinaryService{
+    Pet Pet
+    String Name
+    DateTime InputDate
+    DateTime OutputDate
+    Double Cost
+    void Input()
+    void Output()
+}
+abstract class Person {
+    String Names
+    String Surnames
+    String Phone
+    String Street
+    Gender Gender
+}
+abstract class Entity
+class AestheticServices
+class MedicalAppointment
+class Hospitalization
+class Doctor
+class Pet
+class Client
+
+'------------------------------------------------------------------
+
+IEntity <|-- Entity
+BaseEntity <|-- Entity
+Entity <|-- VeterinaryService
+Entity <|-- Person
+Entity <|-- Pet
+IVeterinaryService <|-- VeterinaryService
+VeterinaryService <|-- AestheticServices
+VeterinaryService <|-- MedicalAppointment
+VeterinaryService <|-- Hospitalization
+Person <|-- Doctor
+Person <|-- Client
+Pet *-- Client
+VeterinaryService *-- Pet
+
+@enduml
