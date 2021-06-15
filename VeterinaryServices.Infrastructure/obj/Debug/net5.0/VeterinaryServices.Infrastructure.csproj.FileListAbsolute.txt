@@ -13,3 +13,6 @@ D:\Nueva carpeta\Universidad\IGS\VeterinaryServices\VeterinaryServices.Infrastru
 D:\Nueva carpeta\Universidad\IGS\VeterinaryServices\VeterinaryServices.Infrastructure\obj\Debug\net5.0\VeterinaryServices.Infrastructure.dll
 D:\Nueva carpeta\Universidad\IGS\VeterinaryServices\VeterinaryServices.Infrastructure\obj\Debug\net5.0\ref\VeterinaryServices.Infrastructure.dll
 D:\Nueva carpeta\Universidad\IGS\VeterinaryServices\VeterinaryServices.Infrastructure\obj\Debug\net5.0\VeterinaryServices.Infrastructure.pdb
+D:\Nueva carpeta\Universidad\IGS\VeterinaryServices\VeterinaryServices.Infrastructure\bin\Debug\net5.0\VeterinaryServices.Infrastructure.runtimeconfig.json
+D:\Nueva carpeta\Universidad\IGS\VeterinaryServices\VeterinaryServices.Infrastructure\bin\Debug\net5.0\VeterinaryServices.Infrastructure.runtimeconfig.dev.json
+D:\Nueva carpeta\Universidad\IGS\VeterinaryServices\VeterinaryServices.Infrastructure\obj\Debug\net5.0\VeterinaryServices.Infrastructure.genruntimeconfig.cache
