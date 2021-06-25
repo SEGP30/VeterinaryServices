@@ -43,7 +43,7 @@ namespace VeterinaryServices.Infrastructure.Base
             _dbSet.Update(entity);
         }
 
-        public async void Insert(T entity)
+        public async Task Insert(T entity)
         {
             await _dbSet.AddAsync(entity);
         }

@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "VeterinaryServices.Application/1.0.0": {
+        "dependencies": {
+          "VeterinaryServices.Domain": "1.0.0"
+        },
+        "runtime": {
+          "VeterinaryServices.Application.dll": {}
+        }
+      },
+      "VeterinaryServices.Domain/1.0.0": {
+        "runtime": {
+          "VeterinaryServices.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "VeterinaryServices.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "VeterinaryServices.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
