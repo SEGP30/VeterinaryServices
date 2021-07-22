@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using VeterinaryServices.Application.ClientServices;
+using VeterinaryServices.Application.ClientsServices;
 using VeterinaryServices.Application.ClientServices.Requests;
 using VeterinaryServices.Domain.Contracts;
 

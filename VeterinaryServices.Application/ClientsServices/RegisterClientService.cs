@@ -4,7 +4,7 @@ using VeterinaryServices.Application.ClientServices.Responses;
 using VeterinaryServices.Domain.Contracts;
 using VeterinaryServices.Domain.Entities;
 
-namespace VeterinaryServices.Application.ClientServices
+namespace VeterinaryServices.Application.ClientsServices
 {
     public class RegisterClientService
     {
@@ -17,6 +17,10 @@ namespace VeterinaryServices.Application.ClientServices
 
         public async Task<RegisterClientResponse> Execute(RegisterClientRequest request)
         {
+            
+            var clientInDb = await _unitOfWork.ClientRepository.Find(request.ClientId);
+            if (clientInDb != null)
+                return null;
 
             var clientToRegister = new Client
             {
