@@ -17,7 +17,11 @@ namespace VeterinaryServices.Application.ClientServices
 
         public async Task<RegisterClientResponse> Execute(RegisterClientRequest request)
         {
-
+            
+            var clientInDb = await _unitOfWork.ClientRepository.Find(request.ClientId);
+            if (clientInDb != null)
+                return null;
+            
             var clientToRegister = new Client
             {
                 Id = request.ClientId,

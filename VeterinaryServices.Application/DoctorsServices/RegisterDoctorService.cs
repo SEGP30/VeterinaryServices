@@ -17,6 +17,10 @@ namespace VeterinaryServices.Application.DoctorsServices
 
         public async Task<RegisterDoctorResponse> Execute(RegisterDoctorRequest request)
         {
+            
+            var doctorInDb = await _unitOfWork.DoctorRepository.Find(request.DoctorId);
+            if (doctorInDb != null)
+                return null;
 
             var doctorToRegister = new Doctor
             {
