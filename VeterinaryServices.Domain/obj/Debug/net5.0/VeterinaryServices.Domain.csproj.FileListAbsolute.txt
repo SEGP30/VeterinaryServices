@@ -2,7 +2,6 @@ D:\Nueva carpeta\Universidad\IGS\VeterinaryServices\VeterinaryServices.Domain\bi
 D:\Nueva carpeta\Universidad\IGS\VeterinaryServices\VeterinaryServices.Domain\bin\Debug\net5.0\VeterinaryServices.Domain.dll
 D:\Nueva carpeta\Universidad\IGS\VeterinaryServices\VeterinaryServices.Domain\bin\Debug\net5.0\ref\VeterinaryServices.Domain.dll
 D:\Nueva carpeta\Universidad\IGS\VeterinaryServices\VeterinaryServices.Domain\bin\Debug\net5.0\VeterinaryServices.Domain.pdb
-D:\Nueva carpeta\Universidad\IGS\VeterinaryServices\VeterinaryServices.Domain\obj\Debug\net5.0\VeterinaryServices.Domain.csprojAssemblyReference.cache
 D:\Nueva carpeta\Universidad\IGS\VeterinaryServices\VeterinaryServices.Domain\obj\Debug\net5.0\VeterinaryServices.Domain.GeneratedMSBuildEditorConfig.editorconfig
 D:\Nueva carpeta\Universidad\IGS\VeterinaryServices\VeterinaryServices.Domain\obj\Debug\net5.0\VeterinaryServices.Domain.AssemblyInfoInputs.cache
 D:\Nueva carpeta\Universidad\IGS\VeterinaryServices\VeterinaryServices.Domain\obj\Debug\net5.0\VeterinaryServices.Domain.AssemblyInfo.cs
@@ -10,3 +9,4 @@ D:\Nueva carpeta\Universidad\IGS\VeterinaryServices\VeterinaryServices.Domain\ob
 D:\Nueva carpeta\Universidad\IGS\VeterinaryServices\VeterinaryServices.Domain\obj\Debug\net5.0\VeterinaryServices.Domain.dll
 D:\Nueva carpeta\Universidad\IGS\VeterinaryServices\VeterinaryServices.Domain\obj\Debug\net5.0\ref\VeterinaryServices.Domain.dll
 D:\Nueva carpeta\Universidad\IGS\VeterinaryServices\VeterinaryServices.Domain\obj\Debug\net5.0\VeterinaryServices.Domain.pdb
+D:\Nueva carpeta\Universidad\IGS\VeterinaryServices\VeterinaryServices.Domain\obj\Debug\net5.0\VeterinaryServices.Domain.csproj.AssemblyReference.cache

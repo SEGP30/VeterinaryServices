@@ -8,4 +8,8 @@
       <ProjectReference Include="..\VeterinaryServices.Domain\VeterinaryServices.Domain.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="SearchServices\Requests" />
+    </ItemGroup>
+
 </Project>

@@ -36,7 +36,6 @@ D:\Nueva carpeta\Universidad\IGS\VeterinaryServices\WebApi\bin\Debug\net5.0\Vete
 D:\Nueva carpeta\Universidad\IGS\VeterinaryServices\WebApi\bin\Debug\net5.0\VeterinaryServices.Application.pdb
 D:\Nueva carpeta\Universidad\IGS\VeterinaryServices\WebApi\bin\Debug\net5.0\VeterinaryServices.Domain.pdb
 D:\Nueva carpeta\Universidad\IGS\VeterinaryServices\WebApi\bin\Debug\net5.0\VeterinaryServices.Infrastructure.pdb
-D:\Nueva carpeta\Universidad\IGS\VeterinaryServices\WebApi\obj\Debug\net5.0\WebApi.csprojAssemblyReference.cache
 D:\Nueva carpeta\Universidad\IGS\VeterinaryServices\WebApi\obj\Debug\net5.0\WebApi.GeneratedMSBuildEditorConfig.editorconfig
 D:\Nueva carpeta\Universidad\IGS\VeterinaryServices\WebApi\obj\Debug\net5.0\WebApi.AssemblyInfoInputs.cache
 D:\Nueva carpeta\Universidad\IGS\VeterinaryServices\WebApi\obj\Debug\net5.0\WebApi.AssemblyInfo.cs
@@ -52,3 +51,4 @@ D:\Nueva carpeta\Universidad\IGS\VeterinaryServices\WebApi\obj\Debug\net5.0\WebA
 D:\Nueva carpeta\Universidad\IGS\VeterinaryServices\WebApi\obj\Debug\net5.0\ref\WebApi.dll
 D:\Nueva carpeta\Universidad\IGS\VeterinaryServices\WebApi\obj\Debug\net5.0\WebApi.pdb
 D:\Nueva carpeta\Universidad\IGS\VeterinaryServices\WebApi\obj\Debug\net5.0\WebApi.genruntimeconfig.cache
+D:\Nueva carpeta\Universidad\IGS\VeterinaryServices\WebApi\obj\Debug\net5.0\WebApi.csproj.AssemblyReference.cache
