@@ -1,4 +1,4 @@
-﻿namespace VeterinaryServices.Application.AestheticServices_Services.Responses
+﻿namespace VeterinaryServices.Application.AestheticAppointmentsServices.Responses
 {
     public class RegisterAestheticServiceResponse
     {

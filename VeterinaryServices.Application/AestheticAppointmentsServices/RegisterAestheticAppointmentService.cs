@@ -1,18 +1,18 @@
 ﻿using System;
 using System.Linq;
 using System.Threading.Tasks;
-using VeterinaryServices.Application.AestheticServices_Services.Requests;
-using VeterinaryServices.Application.AestheticServices_Services.Responses;
+using VeterinaryServices.Application.AestheticAppointmentsServices.Requests;
+using VeterinaryServices.Application.AestheticAppointmentsServices.Responses;
 using VeterinaryServices.Domain.Contracts;
 using VeterinaryServices.Domain.Entities;
 
-namespace VeterinaryServices.Application.AestheticServices_Services
+namespace VeterinaryServices.Application.AestheticAppointmentsServices
 {
-    public class RegisterAestheticService_Service
+    public class RegisterAestheticAppointmentService
     {
         private readonly IUnitOfWork _unitOfWork;
 
-        public RegisterAestheticService_Service(IUnitOfWork unitOfWork)
+        public RegisterAestheticAppointmentService(IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
         }

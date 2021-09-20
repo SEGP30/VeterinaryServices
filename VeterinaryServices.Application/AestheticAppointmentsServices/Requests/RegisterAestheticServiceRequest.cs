@@ -1,7 +1,7 @@
 ﻿using System;
 using VeterinaryServices.Domain.Enums;
 
-namespace VeterinaryServices.Application.AestheticServices_Services.Requests
+namespace VeterinaryServices.Application.AestheticAppointmentsServices.Requests
 {
     public class RegisterAestheticServiceRequest
     {

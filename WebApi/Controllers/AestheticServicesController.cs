@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using VeterinaryServices.Application.AestheticServices_Services;
-using VeterinaryServices.Application.AestheticServices_Services.Requests;
+using VeterinaryServices.Application.AestheticAppointmentsServices.Requests;
+using VeterinaryServices.Application.AestheticAppointmentsServices;
 using VeterinaryServices.Domain.Contracts;
 
 namespace WebApi.Controllers
@@ -20,7 +20,7 @@ namespace WebApi.Controllers
         [HttpPost]
         public async Task<ActionResult> RegisterAesthethicService(RegisterAestheticServiceRequest request)
         {
-            var service = new RegisterAestheticService_Service(_unitOfWork);
+            var service = new RegisterAestheticAppointmentService(_unitOfWork);
             var response = await service.Execute(request);
             return Ok(response);
         }
