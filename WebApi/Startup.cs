@@ -12,6 +12,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using VeterinaryServices.Application.SearchServices;
 using VeterinaryServices.Domain.Contracts;
 using VeterinaryServices.Infrastructure;
 using VeterinaryServices.Infrastructure.Base;

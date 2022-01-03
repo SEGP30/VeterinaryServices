@@ -40,5 +40,13 @@ namespace WebApi.Controllers
             var response = await service.Execute(name, id);
             return Ok(response);
         }
+
+        [HttpPut]
+        public async Task<IActionResult> UpdatePet(UpdatePetRequest request)
+        {
+            var service = new UpdatePetService(_unitOfWork);
+            var response = await service.Execute(request);
+            return Ok(response);
+        }
     }
 }
