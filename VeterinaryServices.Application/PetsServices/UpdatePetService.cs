@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using System.Threading.Tasks;
 using VeterinaryServices.Application.PetsServices.Requests;
 using VeterinaryServices.Application.PetsServices.Responses;
@@ -20,14 +21,20 @@ namespace VeterinaryServices.Application.PetsServices
             var petToUpdate = (await _unitOfWork.PetRepository
                     .FindBy(p => p.Name == request.PetName && p.OwnerId == request.OwnerId))
                 .FirstOrDefault();
-            if (petToUpdate != null)
+            if (petToUpdate == null)
             {
-                petToUpdate.Kind = request.PetKind;
-                petToUpdate.Weight = request.PetWeight;
-                petToUpdate.Gender = request.PetGender;
-                petToUpdate.Size = request.PetSize;
-                petToUpdate.Color = request.PetColor;
+                return new UpdatePetResponse
+                {
+                    Message = "Error al actualizar la Mascota"
+                };
             }
+            
+            petToUpdate.Kind = request.PetKind;
+            petToUpdate.Weight = request.PetWeight;
+            petToUpdate.Gender = request.PetGender;
+            petToUpdate.Size = request.PetSize;
+            petToUpdate.Color = request.PetColor;
+            petToUpdate.UpdateTime = DateTime.Now;
 
             _unitOfWork.PetRepository.Update(petToUpdate);
             await _unitOfWork.Commit();
