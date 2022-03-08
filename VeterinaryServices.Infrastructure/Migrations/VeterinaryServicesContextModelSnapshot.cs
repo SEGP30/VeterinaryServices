@@ -74,6 +74,9 @@ namespace VeterinaryServices.Infrastructure.Migrations
                     b.Property<string>("Names")
                         .HasColumnType("text");
 
+                    b.Property<int>("State")
+                        .HasColumnType("int");
+
                     b.Property<string>("Surnames")
                         .HasColumnType("text");
 
@@ -108,6 +111,9 @@ namespace VeterinaryServices.Infrastructure.Migrations
 
                     b.Property<string>("Names")
                         .HasColumnType("text");
+
+                    b.Property<int>("State")
+                        .HasColumnType("int");
 
                     b.Property<string>("Surnames")
                         .HasColumnType("text");
@@ -229,6 +235,9 @@ namespace VeterinaryServices.Infrastructure.Migrations
                         .HasColumnType("text");
 
                     b.Property<int>("Size")
+                        .HasColumnType("int");
+
+                    b.Property<int>("State")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("UpdateTime")

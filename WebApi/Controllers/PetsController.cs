@@ -48,5 +48,14 @@ namespace WebApi.Controllers
             var response = await service.Execute(request);
             return Ok(response);
         }
+
+        [HttpDelete]
+        public async Task<IActionResult> DeletePet(DeletePetRequest request)
+        {
+            var service = new DeletePetService(_unitOfWork);
+            var response = await service.Execute(request);
+            return Ok(response);
+
+        }
     }
 }
