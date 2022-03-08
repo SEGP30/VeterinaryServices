@@ -4,6 +4,7 @@ using VeterinaryServices.Application.PetsServices.Requests;
 using VeterinaryServices.Application.PetsServices.Responses;
 using VeterinaryServices.Domain.Contracts;
 using VeterinaryServices.Domain.Entities;
+using VeterinaryServices.Domain.Enums;
 
 namespace VeterinaryServices.Application.PetsServices
 {
@@ -37,7 +38,8 @@ namespace VeterinaryServices.Application.PetsServices
                 Kind = request.PetKind,
                 Size = request.PetSize,
                 Weight = request.PetWeight,
-                OwnerId = request.OwnerId
+                OwnerId = request.OwnerId,
+                State = EntityState.Active
             };
 
             await _unitOfWork.PetRepository.Insert(petToRegister);

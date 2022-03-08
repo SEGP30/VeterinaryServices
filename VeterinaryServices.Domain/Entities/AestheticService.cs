@@ -14,17 +14,17 @@ namespace VeterinaryServices.Domain.Entities
 
         public void Start()
         {
-            State = AestheticServiceState.InProgress;
+            State = State == AestheticServiceState.Pending ? AestheticServiceState.InProgress : State;
         }
 
         public override void Output()
         {
-            State = AestheticServiceState.Completed;
+            State = State == AestheticServiceState.InProgress ? AestheticServiceState.Completed : State;
         }
 
-        public void Cancelation()
+        public void Cancel()
         {
-            State = AestheticServiceState.Canceled;
+            State = State == AestheticServiceState.Pending ? AestheticServiceState.Canceled : State;
         }
     }
 }
