@@ -27,7 +27,7 @@ namespace WebApi.Controllers
         }
         
         [HttpGet]
-        public async Task<IActionResult> SearchPet(string name, long id)
+        public async Task<IActionResult> SearchDoctor(string name, long id)
         {
             var service = new IndividualEntitySearchService(_unitOfWork);
             var response = await service.Execute(name, id);

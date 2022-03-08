@@ -12,6 +12,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using VeterinaryServices.Application.SearchServices;
 using VeterinaryServices.Domain.Contracts;
 using VeterinaryServices.Infrastructure;
 using VeterinaryServices.Infrastructure.Base;
@@ -27,11 +28,30 @@ namespace WebApi
 
         public IConfiguration Configuration { get; }
 
+        /*Put it before start new migrations
+        $"Server = localhost; " +
+        $"Port = 0330; " +
+        $"Database = Veterinary_Services ; " +
+        $"Username = root ; " +
+        $"Password = mementomori1"
+         
+        Put it when the migrations are done
+        $"Server = {Environment.GetEnvironmentVariable("SERVER")}; " +
+        $"Port = {Environment.GetEnvironmentVariable("PORT")}; " +
+        $"Database = {Environment.GetEnvironmentVariable("DATABASE")} ; " +
+        $"Username = {Environment.GetEnvironmentVariable("USERNAME")} ; " +
+        $"Password = {Environment.GetEnvironmentVariable("PASSWORD")}"*/
+        
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<DbContext, VeterinaryServicesContext>
-            (opt => opt.UseMySQL($"Server = localhost; Port = 0330; Database = Veterinary_Services ; Username = root ; Password = mementomori1"),
+            (opt => opt.UseMySQL(
+                    $"Server = {Environment.GetEnvironmentVariable("SERVER")}; " +
+                    $"Port = {Environment.GetEnvironmentVariable("PORT")}; " +
+                    $"Database = {Environment.GetEnvironmentVariable("DATABASE")} ; " +
+                    $"Username = {Environment.GetEnvironmentVariable("USERNAME")} ; " +
+                    $"Password = {Environment.GetEnvironmentVariable("PASSWORD")}"),
                 ServiceLifetime.Transient
             );
             services.AddTransient<VeterinaryServicesContext>();
